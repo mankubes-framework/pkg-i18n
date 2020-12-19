@@ -1,0 +1,7 @@
+.git*
+.gitignore
+.gitattributes
+publish.sh
+node_modules
+tsconfig.json
+tsconfig-cjs.json

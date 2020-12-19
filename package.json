@@ -1,0 +1,37 @@
+{
+  "name": "@mankubes-framework/pkg-i18n",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "types": "src/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "imports": {
+    "#translate/*": "./src/translate/*.mjs",
+    "#translators/*": "./src/translators/*.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mankubes-framework/pkg-i18n.git"
+  },
+  "keywords": [
+    "mankubes",
+    "framework",
+    "schema"
+  ],
+  "author": "Eduardo Segura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mankubes-framework/pkg-i18n/issues"
+  },
+  "homepage": "https://github.com/mankubes-framework/pkg-i18n#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
