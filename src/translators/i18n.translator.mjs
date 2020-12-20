@@ -8,7 +8,15 @@ export const i18nTranslator = (translator) => {
     return translator.__n(singular, plural, count);
   }
 
-  return { t, n }
+  const setLocale = (locale) => {
+    return translator.setLocale(locale);
+  }
+
+  const getCurrentLocale = () => {
+    return translator.getLocale();
+  }
+
+  return { t, n, setLocale }
 }
 
 export default i18nTranslator
