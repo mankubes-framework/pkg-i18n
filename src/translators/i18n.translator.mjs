@@ -12,11 +12,15 @@ export const i18nTranslator = (translator) => {
     return translator.setLocale(locale);
   }
 
-  const getCurrentLocale = () => {
+  const getLocale = () => {
     return translator.getLocale();
   }
 
-  return { t, n, setLocale }
+  const getLocales = () => {
+    return translator.getLocales();
+  }
+
+  return { t, n, setLocale, getLocale, getLocales }
 }
 
 export default i18nTranslator
