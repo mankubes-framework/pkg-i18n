@@ -21,7 +21,7 @@ export const i18nTranslator = (translator) => {
   }
 
   const getCollection = (locale) => {
-    return translator.getCollection(locale);
+    return translator.getCatalog(locale);
   }
 
   return { t, n, setLocale, getLocale, getLocales, getCollection }
