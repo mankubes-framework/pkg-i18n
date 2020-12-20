@@ -20,7 +20,11 @@ export const i18nTranslator = (translator) => {
     return translator.getLocales();
   }
 
-  return { t, n, setLocale, getLocale, getLocales }
+  const getCollection = (locale) => {
+    return translator.getCollection(locale);
+  }
+
+  return { t, n, setLocale, getLocale, getLocales, getCollection }
 }
 
 export default i18nTranslator
